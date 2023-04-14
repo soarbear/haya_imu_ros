@@ -19,9 +19,9 @@ $cd ~/catkin_ws
 
 $catkin_make --only-pkg-with-deps haya_imu_ros
 
-## 2.2 USB接続
+## 2.2 USBでの接続
 
-haya_imuを対向装置へUSB接続できた場合、赤LEDが常時点灯します。
+haya_imuを対向装置へUSBで接続できた場合、赤LEDが常時点灯することを確認できます。
 
 ## 2.3 デバイス名の固定
 
@@ -39,7 +39,7 @@ $~/catkin_ws/src/haya_imu_ros/script/delete_rules.sh
 
 $udevadm control --reload-rules && udevadm trigger
 
-## 2.4 ROSLAUNCH
+## 2.4 ROS LAUNCH
 
 - 通常出力モード、キャリブレーションモードの場合、
 
