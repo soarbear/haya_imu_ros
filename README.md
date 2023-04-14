@@ -19,11 +19,11 @@ $cd ~/catkin_ws
 
 $catkin_make --only-pkg-with-deps haya_imu_ros
 
-## 2.2 haya_imuを対向装置のUSBポートへ接続
+## 2.2 USB接続
 
-接続済みの場合、赤LEDが常時点灯します。
+haya_imuを対向装置のUSBへ接続できた場合、赤LEDが常時点灯します。
 
-## 2.3 USBポート番号の固定
+## 2.3 デバイス名の固定
 
 $chmod +x ~/catkin_ws/src/haya_imu_ros/script/create_rules.sh
 
@@ -31,7 +31,7 @@ $~/catkin_ws/src/haya_imu_ros/script/create_rules.sh
 
 $udevadm control --reload-rules && udevadm trigger
 
-- また、固定したUSBポート番号を解除する場合、
+- また、固定したデバイス名を解除する場合、
 
 $chmod +x ~/catkin_ws/src/haya_imu_ros/script/delete_rules.sh
 
