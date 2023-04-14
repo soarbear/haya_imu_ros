@@ -21,7 +21,7 @@ $catkin_make --only-pkg-with-deps haya_imu_ros
 
 ## 2.2 USB接続
 
-haya_imuを対向装置のUSBへ接続できた場合、赤LEDが常時点灯します。
+haya_imuを対向装置へUSB接続できた場合、赤LEDが常時点灯します。
 
 ## 2.3 デバイス名の固定
 
