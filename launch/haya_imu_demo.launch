@@ -1,0 +1,7 @@
+<launch>
+	<!-- NODEの起動 -->
+	<include file="$(find haya_imu_ros)/launch/haya_imu.launch" />
+	<!-- RVIZでの実演 -->
+	<node name="rviz_6axis" pkg="rviz" type="rviz" args="-d $(find haya_imu_ros)/rviz/fusion_6axis.rviz" />
+	<node name="rviz_9axis" pkg="rviz" type="rviz" args="-d $(find haya_imu_ros)/rviz/fusion_9axis.rviz" />
+</launch>

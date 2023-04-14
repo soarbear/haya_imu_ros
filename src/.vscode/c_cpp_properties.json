@@ -1,0 +1,37 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/ub/catkin_ws/devel_isolated/rosserial_msgs/include/**",
+        "/home/ub/catkin_ws/devel_isolated/rosserial_mbed/include/**",
+        "/home/ub/catkin_ws/devel_isolated/rosserial_arduino/include/**",
+        "/home/ub/catkin_ws/devel_isolated/realsense2_camera/include/**",
+        "/home/ub/catkin_ws/devel_isolated/move_base_msgs/include/**",
+        "/home/ub/catkin_ws/devel_isolated/map_msgs/include/**",
+        "/home/ub/catkin_ws/devel_isolated/imu_filter_madgwick/include/**",
+        "/home/ub/catkin_ws/devel_isolated/hector_nav_msgs/include/**",
+        "/home/ub/catkin_ws/devel_isolated/hector_mapping/include/**",
+        "/home/ub/catkin_ws/devel_isolated/darknet_ros_msgs/include/**",
+        "/home/ub/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/ub/catkin_ws/src/darknet_ros/darknet_ros/include/**",
+        "/home/ub/catkin_ws/src/fdilink_ahrs-demo/include/**",
+        "/home/ub/catkin_ws/src/haya_imu_ros/include/**",
+        "/home/ub/catkin_ws/src/hector_slam/hector_geotiff/include/**",
+        "/home/ub/catkin_ws/src/hector_slam/hector_map_tools/include/**",
+        "/home/ub/catkin_ws/src/hector_slam/hector_mapping/include/**",
+        "/home/ub/catkin_ws/src/hector_slam/hector_marker_drawing/include/**",
+        "/home/ub/catkin_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/home/ub/catkin_ws/src/rosserial/rosserial_server/include/**",
+        "/home/ub/catkin_ws/src/rosserial/rosserial_test/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,22 @@
+# USB Serial Port /dev/ttyACM* (default: /dev/ttyACM_haya)
+# Recommend to use command: ls -l /dev/ttyACM* to list the port occupied by haya_imu and other device
+#serial_port_name: /dev/ttyACM0
+serial_port_name: /dev/ttyACM_haya
+
+# baya_imu topic name (default: /haya_imu)
+imu_topic: /imu_data
+
+# haya_imu frame id (default: imu_link)
+imu_frame: imu_link
+
+# haya_imu work mode
+# 1000 (Normal Output Mode,   1000Hz Output Data Rate)
+#  500 (Normal Output Mode,    500Hz Output Data Rate, default)
+#  250 (Demonstration Mode,    250Hz Output Data Rate)
+#  100 (Normal Output Mode,    100Hz Output Data Rate)
+#   10 (Calibration Mode,       10Hz Output Data Rate)
+# - ATTENTION:
+# - When customer receives haya_imu, please set it to calibration mode once, 
+#   calibrate it according to the manual. Then set it to normal output mode ex. 500, 250... etc.
+# - Do not support numbers or alphabets other than the above, ex. 800, a.
+imu_mode: 500

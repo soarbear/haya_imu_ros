@@ -1,0 +1,4 @@
+# set the udev rules, create the device port
+ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="e9ad", ENV{ID_MM_DEVICE_IGNORE}="1"
+ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="e9ad", ENV{MTP_NO_PROBE}="1"
+KERNEL=="ttyACM*", SUBSYSTEMS=="usb", ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="e9ad", SYMLINK+="ttyACM_haya", GROUP="dialout", MODE:="0666"

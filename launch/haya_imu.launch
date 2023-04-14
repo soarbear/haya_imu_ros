@@ -1,0 +1,7 @@
+<launch>
+	<!-- NODEの起動 -->
+	<node pkg="haya_imu_ros" type="haya_imu_node" name="haya_imu_node" output="screen" >
+		<!-- パラメータの取り組み -->
+		<rosparam command="load" file="$(find haya_imu_ros)/config/params.yaml" />
+	</node>
+</launch>
