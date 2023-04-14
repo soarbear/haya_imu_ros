@@ -9,11 +9,11 @@ haya_imu_rosは、9軸IMU/AHRS haya_imu v3のROSパッケージです。主な�
 
 # 2. 使用手順
 
-## 2.1 hayate_imu_rosのインストール
+## 2.1 haya_imu_rosのインストール
 
 $cd ~/catkin_ws/src
 
-$git clone https://github.com/soarbear/hayate_imu_ros.git
+$git clone https://github.com/soarbear/haya_imu_ros.git
 
 $cd ~/catkin_ws
 
@@ -51,7 +51,7 @@ $roslaunch haya_imu_ros haya_imu_demo.launch
 
 ## 2.5 Topicsの確認
 
-- imu_data(Message: hayate_imu_ros/ImuData), 通常出力モード、キャリブレーションモード用 
+- imu_data(Message: haya_imu_ros/ImuData), 通常出力モード、キャリブレーションモード用 
 
 - tf(Message: geometry_msgs/TransformStamped), デモンストレーションモード用
 
