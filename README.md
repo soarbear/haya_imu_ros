@@ -49,6 +49,8 @@ $roslaunch haya_imu_ros haya_imu.launch
 
 $roslaunch haya_imu_ros haya_imu_demo.launch
 
+![alt text](https://github.com/soarbear/haya_imu_ros/blob/master/image/6aixs_9aixs_fusion_demo.png)
+
 ## 2.5 Topicsの確認
 
 - imu_data(Message: haya_imu_ros/ImuData), 通常出力モード、キャリブレーションモード用 
