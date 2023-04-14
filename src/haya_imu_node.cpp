@@ -88,7 +88,7 @@ void HayaImuNode::SendParams() {
     int32_t response[2];
 
     // Check parameter imu_mode_ once
-    if (imu_mode_ < CALIBRATION_MODE || imu_mode_ > ODR_1KHZ_MODE){ // Exception
+    if ((imu_mode_ < CALIBRATION_MODE) || (imu_mode_ > ODR_1KHZ_MODE)) { // Exception
         ROS_WARN("[Para] Parameter(imu_mode in params.yaml) be out of range, imu works in ODR_500Hz_MODE");
         imu_mode_ = ODR_500Hz_MODE;
     }
@@ -116,24 +116,20 @@ void HayaImuNode::SendParams() {
 
     // Release information on device to ROS
     switch (imu_mode_) {
-        case DEMONSTRATION_MODE: {
+        case DEMONSTRATION_MODE:
             ROS_INFO("[Para] Serial: %s opened, Init-Bias: %s, Mode: Demo(250Hz), Firmware: v%d.%d.%d, Product_SN: %08x",
                     port_name_.c_str(), is_calibrated_[(response[0] >>16 ) &0x1].c_str(), (response[0] >> 8) & 0xf,
                     (response[0] >>4 ) & 0xf, response[0]&0xf, response[1]);
             break;
-        }
-        case CALIBRATION_MODE: {
+        case CALIBRATION_MODE:
             ROS_INFO("[Para] Serial: %s opened , Init-Bias: %s, Mode: Calibration(2Hz), Firmware: v%d.%d.%d, Product_SN: %08x",
                     port_name_.c_str(), is_calibrated_[(response[0] >>16 ) &0x1].c_str(), (response[0] >> 8) & 0xf,
                     (response[0] >> 4) & 0xf, response[0] & 0xf, response[1]);
             break;
-        }
-        default: { // Normal output mode
+        default: // Normal output mode
             ROS_INFO("[Para] Serial: %s opened, Init-Bias: %s, Mode: Normal Output(%dHz), Firmware: v%d.%d.%d, Product_SN: %08x",
                     port_name_.c_str(), is_calibrated_[(response[0]>>16)&0x1].c_str(), 
                     imu_mode_, (response[0] >> 8) & 0xf, (response[0] >> 4) & 0xf, response[0] & 0xf, response[1]);
-            break;
-        }
     }
 }
 
