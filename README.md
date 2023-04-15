@@ -59,9 +59,11 @@ $roslaunch haya_imu_ros haya_imu_demo.launch
 
 ## 2.6 Topic、tfの確認
 
-- imu_data(Message: haya_imu_ros/ImuData)、通常出力モード、キャリブレーションモード用 
+- メッセージのタイプ
 
-- tf(Message: geometry_msgs/TransformStamped)、デモンストレーションモード用
+imu_data(Message: haya_imu_ros/ImuData)、通常出力モード、キャリブレーションモード用 
+
+tf(Message: geometry_msgs/TransformStamped)、デモンストレーションモード用
 
 - Topicのデータを確認する例
 
@@ -70,6 +72,10 @@ $rostopic echo imu_data
 - Topicの出力レートを確認する例
 
 $rostopic hz -w 100 imu_data
+
+## 2.6 キャリブレーション
+
+別途、商品マニュアルを参照してください。
 
 # 3. リリース
 
