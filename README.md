@@ -25,6 +25,8 @@ haya_imuを対向装置へUSBで接続できた場合、赤LEDが常時点灯す
 
 ## 2.3 デバイス名の固定
 
+- デバイス名を固定する場合、
+
 $chmod +x ~/catkin_ws/src/haya_imu_ros/script/create_rules.sh
 
 $~/catkin_ws/src/haya_imu_ros/script/create_rules.sh
@@ -75,4 +77,4 @@ $rostopic hz -w 100 imu_data
 
 # 4. ライセンス
 
-- 本ROSパッケージ(haya_imu_ros)に対して、BSD-3-Clauseが適用される。
+- 本ROSパッケージ(haya_imu_ros)に対して、BSD-3-Clauseが適用されます。
