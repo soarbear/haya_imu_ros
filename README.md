@@ -39,7 +39,11 @@ $~/catkin_ws/src/haya_imu_ros/script/delete_rules.sh
 
 $udevadm control --reload-rules && udevadm trigger
 
-## 2.4 ROS LAUNCH
+## 2.4 パラメータの確認
+
+params.yamlに載ってあるパラメータの値を確認して、必要に応じて変更します。
+
+## 2.5 ROSローンチ
 
 - 通常出力モード、キャリブレーションモードの場合、
 
@@ -51,11 +55,11 @@ $roslaunch haya_imu_ros haya_imu_demo.launch
 
 ![alt text](https://github.com/soarbear/haya_imu_ros/blob/main/image/demo_fusion.jpg)
 
-## 2.5 Topicsの確認
+## 2.6 Topic、tfの確認
 
-- imu_data(Message: haya_imu_ros/ImuData), 通常出力モード、キャリブレーションモード用 
+- imu_data(Message: haya_imu_ros/ImuData)、通常出力モード、キャリブレーションモード用 
 
-- tf(Message: geometry_msgs/TransformStamped), デモンストレーションモード用
+- tf(Message: geometry_msgs/TransformStamped)、デモンストレーションモード用
 
 - Topicのデータを確認する例
 
