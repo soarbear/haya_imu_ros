@@ -43,7 +43,7 @@ $udevadm control --reload-rules && udevadm trigger
 
 ## 2.4 パラメータの確認
 
-params.yamlに載ってあるパラメータの値を確認して、必要に応じて変更します。
+params.yamlに載ってあるパラメータの値を確認して、目的、必要に応じて変更してください。
 
 ## 2.5 ROSローンチ
 
@@ -73,9 +73,9 @@ $rostopic echo imu_data
 
 $rostopic hz -w 100 imu_data
 
-## 2.6 キャリブレーション
+## 2.7 キャリブレーション
 
-別途、商品マニュアルを参照してください。
+ここでは内容を省きますが、商品マニュアル参照してください。
 
 # 3. リリース
 
