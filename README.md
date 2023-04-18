@@ -31,7 +31,7 @@ $chmod +x ~/catkin_ws/src/haya_imu_ros/script/create_rules.sh
 
 $~/catkin_ws/src/haya_imu_ros/script/create_rules.sh
 
-$udevadm control --reload-rules && udevadm trigger
+$sudo udevadm control --reload-rules && udevadm trigger
 
 - また、固定したデバイス名を解除する場合、
 
@@ -39,7 +39,7 @@ $chmod +x ~/catkin_ws/src/haya_imu_ros/script/delete_rules.sh
 
 $~/catkin_ws/src/haya_imu_ros/script/delete_rules.sh
 
-$udevadm control --reload-rules && udevadm trigger
+$sudo udevadm control --reload-rules && udevadm trigger
 
 ## 2.4 パラメータの確認
 
