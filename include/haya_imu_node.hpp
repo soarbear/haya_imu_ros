@@ -83,7 +83,7 @@ class HayaImuNode : public lite_serial::LiteSerial {
 			ODR_500Hz_MODE		= 500,	// (Output Data Mode,	500Hz Output Data Rate, default)
 			DEMONSTRATION_MODE	= 250,	// (Demonstration Mode,	250Hz Output Data Rate)
 			ODR_100Hz_MODE		= 100,	// (Output Data Mode, 	25Hz Output Data Rate)
-			CALIBRATION_MODE	= 2,	// (Calibration Mode,	2Hz Output Data Rate)
+			CALIBRATION_MODE	= 10,	// (Calibration Mode,	10Hz Output Data Rate)
 		} ServiceMode;
 
 		// Data read from haya_imu through serial port
