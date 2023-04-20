@@ -9,7 +9,7 @@ float64[9] angular_velocity_covariance
 # Unit: m/s^2
 geometry_msgs/Vector3 linear_acceleration
 
-# Unit: (m/s)^2
+# Unit: (m/s^2)^2
 float64[9] linear_acceleration_covariance
 
 # Unit: uT
@@ -18,7 +18,7 @@ geometry_msgs/Vector3 magnetic_field
 # Unit: (uT)^2
 float64[9] magnetic_field_covariance
 
-# Unit: radian, orientation[0][0:3} for 6aixs fusion, orientation[1][0:3} for 9aixs fusion
+# orientation[0][0:3} for 6aixs fusion, orientation[1][0:3} for 9aixs fusion
 geometry_msgs/Quaternion[2] orientation
 
 # Unit: degree, Euler angle yaw(z) -> pitch(y) -> roll(x)
