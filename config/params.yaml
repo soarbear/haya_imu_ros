@@ -1,5 +1,5 @@
 # USB Serial Port /dev/ttyACM* (default: /dev/ttyACM_haya)
-# Recommend to use command: ls -l /dev/ttyACM* to list the port occupied by haya_imu and other device
+# Recommend to use command: ls -l /dev/ttyACM* to list the ports occupied by haya_imu and other device
 #serial_port_name: /dev/ttyACM0
 serial_port_name: /dev/ttyACM_haya
 
