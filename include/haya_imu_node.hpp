@@ -103,19 +103,19 @@ class HayaImuNode : public lite_serial::LiteSerial {
 			uint16_t crc16; // CRC16 CTITT16
 		} imu_data_;
 
-		// Angular velocity covariance matrix 3x3
+		// Angular velocity covariance matrix 3x3, Unit: (dps)^2
 		const double angular_velocity_covariance_[9] = { 
 			0.028*0.028,			0.0,					0.0,
 			0.0,					0.028*0.028,			0.0,
 			0.0,					0.0,					0.028*0.028};
 
-		// Linear acceleration covariance matrix 3x3       
+		// Linear acceleration covariance matrix 3x3, Unit: (m/s^2)^2      
 		const double linear_acceleration_covariance_[9] = {
 			0.65*0.001*9.8*0.65*0.001*9.8,		0.0,								0.0,
 			0.0,								0.65*0.001*9.8*0.65*0.001*9.8,		0.0,
 			0.0,								0.0,								0.70*0.001*9.8*0.70*0.001*9.8};
 
-		// Magnetic field covariance matrix 3x3
+		// Magnetic field covariance matrix 3x3, Unit: (uT^)2
 		const double magnetic_field_covariance_[9] = {
 			0.12*0.12,				0.0,					0.0,
 			0.0,					0.12*0.12,				0.0,
