@@ -23,9 +23,9 @@ $catkin_make --only-pkg-with-deps haya_imu_ros
 
 haya_imuを対向装置へUSBで接続できた場合、赤LEDが常時点灯することを確認できます。
 
-## 2.3 デバイス名の固定
+## 2.3 USBシリアルポート番号の固定
 
-- デバイス名を固定する場合、
+- 以下ルールの作成によって、ttyACM_hayaに固定します。
 
 $chmod +x ~/catkin_ws/src/haya_imu_ros/script/create_rules.sh
 
@@ -33,7 +33,7 @@ $~/catkin_ws/src/haya_imu_ros/script/create_rules.sh
 
 $sudo udevadm control --reload-rules && sudo udevadm trigger
 
-- また、固定したデバイス名を解除する場合、
+- また、以下ルールの削除によって、固定したUSBシリアルポート番号を解除します。
 
 $chmod +x ~/catkin_ws/src/haya_imu_ros/script/delete_rules.sh
 
@@ -47,11 +47,11 @@ params.yamlに載ってあるパラメータの値を確認して、目的、必
 
 ## 2.5 ROSローンチ
 
-- 通常出力モード、キャリブレーションモードの場合、
+- 通常出力モード、キャリブレーションモードの場合
 
 $roslaunch haya_imu_ros haya_imu.launch
 
-- デモンストレーションモードの場合、
+- デモンストレーションモードの場合
 
 $roslaunch haya_imu_ros haya_imu_demo.launch
 
@@ -75,7 +75,7 @@ $rostopic hz -w 100 imu_data
 
 ## 2.7 キャリブレーション
 
-ここでは内容を省きますが、商品マニュアル参照してください。
+別途製品マニュアルを参照してください。
 
 # 3. リリース
 
