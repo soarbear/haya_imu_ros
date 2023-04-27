@@ -84,3 +84,5 @@ $rostopic hz -w 100 imu_data
 # 4. ライセンス
 
 - 本ROSパッケージ(haya_imu_ros)に対して、BSD-3-Clauseが適用されます。
+
+【製品情報】<a href="https://store.soarcloud.com/products/detail/137" target="_blank">9軸IMU/AHRS 6軸&9軸回転ベクトル 3軸オイラー角 MAX1000Hz同時出力 ROS/ROS2対応 USB接続 | ROBOT翔</a>
