@@ -57,7 +57,7 @@ $roslaunch haya_imu_ros haya_imu.launch
 
 $roslaunch haya_imu_ros haya_imu_demo.launch
 
-![alt text](https://github.com/soarbear/haya_imu_ros/blob/main/image/demo_fusion.jpg)
+<img src="https://github.com/soarbear/haya_imu_ros/blob/main/image/haya_imu(icm-42688+mmc5983ma.jpg)" alt="9軸IMU=icm-42688+mmc5983maデータシュージョンデモ" title="9軸IMU=icm-42688+mmc5983maデータシュージョンデモ" />
 
 ## 2.6 Topic、tfの確認
 
