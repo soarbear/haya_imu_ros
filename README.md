@@ -87,6 +87,17 @@ $rostopic hz -w 100 imu_data
 
 - 本ROSパッケージ(haya_imu_ros)に対して、BSD-3-Clauseが適用されます。
 
-# 5. 詳細情報
+# 5. トラブルシューティング
+
+- Ubuntu 20.04.6LTSでは、「[Read] Serial disconnected」エラーへの対策について、以下ROSドライバファイルでバッファサイズは変更といたします。
+- include/lite_serial.hpp、57行&58行を以下のとおり変更といたします。
+- 変更前
+-           static constexpr uint8_t rx_size_ = 128;
+-           static constexpr int32_t tx_size_ = 128;
+- 変更後
+-           static constexpr uint8_t rx_size_ = 64;
+-           static constexpr int32_t tx_size_ = 64;
+  
+# 6. 詳細情報
 
 <a href="https://store.soarcloud.com/products/detail/137" target="_blank">9軸センサー6軸&9軸回転ベクトル 3軸オイラー角 MAX1000Hz同時出力 ROS/ROS2対応 USB接続 | ROBOT翔</a>
